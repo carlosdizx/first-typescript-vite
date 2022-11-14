@@ -1,7 +1,7 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import { setupCounter } from "./counter";
-import { name, age, isValid } from "./bases/01-types";
+import types from "./bases/01-types";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -16,9 +16,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Created by - <b>${name} - age: ${age} - Cuenta ${
-  isValid ? "valida" : "invalida"
-}</b>
+      Created by - <b>${types}</b>
     </p>
   </div>
 `;
