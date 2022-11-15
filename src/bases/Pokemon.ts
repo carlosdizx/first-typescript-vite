@@ -5,4 +5,8 @@ export class Pokemon {
     public attack: number,
     public defense: number,
   ) {}
+
+   get imageUrl (): string {
+    return `https:pokemon.images.com/${this.id}`;
+   }
 }
